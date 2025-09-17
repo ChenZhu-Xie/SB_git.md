@@ -1,6 +1,7 @@
 # manual sync
 
 <img width="547" height="214" alt="image" src="https://github.com/user-attachments/assets/f0a63c4e-6453-4d2a-9504-98d37c37280e" />
+<img width="526" height="45" alt="image" src="https://github.com/user-attachments/assets/a4405f16-7ddf-49d5-89be-9e40c2630dd0" />
 
 # commit
 
@@ -15,5 +16,6 @@
 # force push
 
 <img width="895" height="610" alt="image" src="https://github.com/user-attachments/assets/d05b16f4-75b3-40aa-a79b-c1b2378ee553" />
+
 
 
