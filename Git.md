@@ -1,6 +1,3 @@
----
-githubUrl: "https://gist.github.com/ChenZhu-Xie/1eb4b764474a2b0cd94a351969d2e5bb"
----
 #meta
 
 This library adds a basic git synchronization functionality to SilverBullet. It should be considered a successor to [silverbullet-git](https://github.com/silverbulletmd/silverbullet-git) implemented in Space Lua.
