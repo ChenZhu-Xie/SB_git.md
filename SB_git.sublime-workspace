@@ -16,6 +16,18 @@
 			"settings":
 			{
 				"buffer_size": 1097,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 50,
 				"line_ending": "Windows"
 			}
 		}
@@ -404,6 +416,7 @@
 	],
 	"file_history":
 	[
+		"/F/Note_book/SilverBullet/备份/SB_git.md/.gitignore",
 		"/F/Note_book/SilverBullet/备份/SB_git.md/README.md",
 		"/D/C2D/Desktop/直播_Setup/obs-youtube-livechat-sync/README.md",
 		"/D/C2D/Desktop/直播_Setup/obs-youtube-livechat-sync/PC📺.jsonl",
@@ -536,11 +549,40 @@
 				{
 					"buffer": 0,
 					"file": "README.md",
-					"selected": true,
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 1097,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": ".gitignore",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50,
 						"regions":
 						{
 						},
@@ -553,7 +595,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
