@@ -1,6 +1,6 @@
 # Welcome to visit my Read-Only dynamic site
 
-[enlarge-the-percentage](https://enlarge-the-percentage.fly.dev/) - built by [SilverBullet](https://silverbullet.md/)
+Under construction: [enlarge-the-percentage](https://enlarge-the-percentage.fly.dev/) - built by [SilverBullet](https://silverbullet.md/)
 
 # manual/periodic/event-driven sync
 
@@ -19,6 +19,7 @@
 
 <img width="895" height="610" alt="image" src="https://github.com/user-attachments/assets/d05b16f4-75b3-40aa-a79b-c1b2378ee553" />
 <img width="473" height="40" alt="image" src="https://github.com/user-attachments/assets/b74cb738-c6c1-4c8c-bd1e-1a2d8ef1b6cd" />
+
 
 
 
