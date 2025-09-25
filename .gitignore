@@ -1,3 +1,4 @@
 .silverbullet.db*
 # _plug/
 *.sublime-workspace
+manual_version_control/
