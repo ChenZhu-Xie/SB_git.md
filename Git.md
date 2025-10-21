@@ -1,3 +1,6 @@
+---
+githubUrl: "https://github.com/ChenZhu-Xie/SB_git.md"
+---
 #meta
 
 This library adds a basic git synchronization functionality to SilverBullet. It should be considered a successor to [silverbullet-git](https://github.com/silverbulletmd/silverbullet-git) implemented in Space Lua.
@@ -19,9 +22,16 @@ ${widgets.commandButton("Git: Commit")}
 # Configuration
 There is currently only a single configuration option: `git.autoSync`. When set, the `Git: Sync` command will be run every _x_ minutes.
 
+1. https://github.com/silverbulletmd/silverbullet-libraries/blob/main/Git.md
+
 Example configuration:
 ```lua
 config.set("git.autoSync", 5)
+```
+
+Real configuration:
+```space-lua
+config.set("git", {autoSync = 60 * 24})
 ```
 
 # Implementation
@@ -828,7 +838,7 @@ local AutoSyncManager = {
   coldStartSyncTriggered = false,
   startupTime = os.time(),
   eventSyncScheduledAt = 0,
-  eventSyncDelaySeconds = 10
+  eventSyncDelaySeconds = 60
 }
 
 function AutoSyncManager:shouldTriggerSync()
@@ -912,8 +922,8 @@ end
 event.listen {
   name = "page:saved",
   run = function(event)
-    -- ✅ 移除锁检查，让核心函数处理互斥
-    print("Page '" .. event.name .. "' saved. Scheduling git sync in " .. AutoSyncManager.eventSyncDelaySeconds/60 .. " minutes.")
+    local pageName = event.data and event.data.name or "?"
+    print("Page '" .. pageName .. "' saved. Scheduling git sync in " .. AutoSyncManager.eventSyncDelaySeconds/60 .. " minutes.")
     AutoSyncManager.eventSyncScheduledAt = os.time()
   end
 }
@@ -922,11 +932,10 @@ print("Event-driven git sync enabled (on page save).")
 event.listen {
   name = "cron:secondPassed",
   run = function()
-    -- ✅ 简化逻辑，让核心函数处理锁
     local syncType = AutoSyncManager:shouldTriggerSync()
 
     if syncType then
-      print("=== " .. syncType .. " sync trigger detected ===") -- 添加调试信息
+      print("=== " .. syncType .. " sync trigger detected ===")
 
       -- Update sync state
       AutoSyncManager:updateSyncState(syncType)
